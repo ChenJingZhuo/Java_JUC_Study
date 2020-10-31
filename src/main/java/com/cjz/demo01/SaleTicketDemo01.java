@@ -1,8 +1,10 @@
 package com.cjz.demo01;
 
+//基本的卖票例子
+
 /**
  * 真正的多线程开发、公司中的开发
- * 线程就是一个单独的资源类，没有任何附属的操作
+ * 线程就是一个单独的资源类，没有任何附属的操作！
  * 1.属性、方法
  */
 public class SaleTicketDemo01 {
@@ -38,6 +40,7 @@ class Ticket{
     private int number = 50;
 
     //买票的方式
+    //synchronized 本质：队列，锁
     public synchronized void sale(){
         if (number > 0){
             try {
