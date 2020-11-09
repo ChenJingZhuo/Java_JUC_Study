@@ -3,6 +3,7 @@ package com.cjz.add;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
+//信号量
 public class SemaphoreDemo {
 
     public static void main(String[] args) {
