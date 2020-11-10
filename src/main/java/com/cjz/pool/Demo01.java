@@ -5,6 +5,9 @@ import java.util.concurrent.Executors;
 
 /**
  * Executors 工具类、3大方法
+ * Executors.newSingleThreadExecutor();//单个线程
+ * Executors.newFixedThreadPool(5);//创建一个固定的线程池的大小
+ * Executors.newCachedThreadPool();//可伸缩的，遇强则强，遇弱则弱
  */
 public class Demo01 {
     public static void main(String[] args) {
