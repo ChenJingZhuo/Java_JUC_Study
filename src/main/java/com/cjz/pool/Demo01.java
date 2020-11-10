@@ -16,7 +16,7 @@ public class Demo01 {
             for (int i = 0; i < 100; i++) {
                 //使用了线程池之后，使用线程池来创建线程
                 threadPool.execute(()->{
-                    System.out.println(Thread.currentThread().getName()+"ok");
+                    System.out.println(Thread.currentThread().getName()+" ok");
                 });
             }
         } catch (Exception e) {
