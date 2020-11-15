@@ -2,6 +2,8 @@ package com.cjz.t_volatile;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
+//volatile可以保证可见性、不保证原子性，由于有内存屏障的存在，可以保证避免指令重排的现象产生！
+
 //不保证原子性
 public class VolatileDemo02 {
 
