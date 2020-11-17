@@ -16,7 +16,7 @@ public enum EnumSingle {
 class Test{
 
     public static void main(String[] args) throws Exception {
-        /*//1
+        /*//1 没有这个空参构造方法 IDEA，javap -p EnumSingle.class都骗了我们。jad -sjava EnumSingle.class才行。
         EnumSingle instance1 = EnumSingle.INSTANCE;
         Constructor<EnumSingle> declaredConstructor = EnumSingle.class.getDeclaredConstructor(null);
         declaredConstructor.setAccessible(true);
