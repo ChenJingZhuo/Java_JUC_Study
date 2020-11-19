@@ -3,6 +3,9 @@ package com.cjz.lock;
 import java.util.concurrent.TimeUnit;
 
 //死锁
+//死锁排查
+//jps -l 查看死锁进程
+//jstack PID(进程号) 查看死锁进程堆栈信息
 public class DeadLockDemo {
     public static void main(String[] args) {
         String lockA = "lockA";
